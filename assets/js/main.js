@@ -5,8 +5,8 @@ var arrayObj=[ { nombre : "Arabela", apellido : "Rojas", rol : "T.A", cumpleanio
  { nombre : "Papu", apellido : "Rivariola", rol : "Psicóloga", cumpleanios : "10 de octubre" },
  { nombre : "Gian", apellido : "Corzo", rol : "Profesor", cumpleanios : "23 de enero" } ];
 
-var arr=arrayObj.forEach(function(e){
-  document.getElementById('ficha').innerHTML+= "<ul><li>Nombre: "+e.nombre+"</li><li>Apellidos: "+
+arrayObj.forEach(function(e){
+  document.getElementById('ficha').innerHTML+= "<div><ul><li>Nombre: "+e.nombre+"</li><li>Apellidos: "+
                                                 e.apellido+"</li><li>Rol: "+e.rol+"</li><li>Cumpleaños: "+
-                                                e.cumpleanios+"</li></ul>";
+                                                e.cumpleanios+"</li></ul></div>";
 });
